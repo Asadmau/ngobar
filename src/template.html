@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0'>
+	<meta name='theme-color' content='#333333'>
+
+	%sapper.base%
+
+	<link rel='stylesheet' href='global.css'>
+	<link rel='manifest' href='manifest.json' crossorigin='use-credentials'>
+	<link rel='icon' type='image/png' href='favicon.png'>
+
+
+	<!-- Favicon -->
+	<link rel="icon" href="../assets/img/brand/favicon.png" type="image/png">
+	<!-- Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+	<!-- Icons -->
+	<link rel="stylesheet" href="../assets/vendor/nucleo/css/nucleo.css" type="text/css">
+	<link rel="stylesheet" href="../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+	<!-- Page plugins -->
+	<!-- Argon CSS -->
+	<link rel="stylesheet" href="../assets/css/argon.css?v=1.2.0" type="text/css">
+	<!-- Sapper generates a <style> tag containing critical CSS
+	     for the current page. CSS for the rest of the app is
+	     lazily loaded when it precaches secondary pages -->
+	%sapper.styles%
+
+	<!-- This contains the contents of the <svelte:head> component, if
+	     the current page has one -->
+	%sapper.head%
+</head>
+
+<body class="g-sidenav-show g-sidenav-hidden">
+	<!-- The application will be rendered inside this element,
+	     because `src/client.js` references it -->
+	<div id='sapper'>%sapper.html%</div>
+
+
+	<!-- Argon Scripts -->
+	<!-- Core -->
+	<script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+	<script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="../assets/vendor/js-cookie/js.cookie.js"></script>
+	<script src="../assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+	<script src="../assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+	<!-- Optional JS -->
+	<script src="../assets/vendor/chart.js/dist/Chart.min.js"></script>
+	<script src="../assets/vendor/chart.js/dist/Chart.extension.js"></script>
+	<!-- Argon JS -->
+	<script src="../assets/js/argon.js?v=1.2.0"></script>
+
+	<!-- Sapper creates a <script> tag containing `src/client.js`
+	     and anything else it needs to hydrate the app and
+	     initialise the router -->
+	%sapper.scripts%
+</body>
+
+</html>
