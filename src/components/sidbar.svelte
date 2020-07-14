@@ -27,13 +27,15 @@
               class={segment === undefined ? 'nav-link active' : 'nav-link '}
               href=".">
               <i class="ni ni-tv-2 text-primary" />
-              <span class="nav-link-text">Dashboard</span>
+              <span class="nav-link-text">Mahasiswa</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="examples/icons.html">
-              <i class="ni ni-planet text-orange" />
-              <span class="nav-link-text">Icons</span>
+            <a
+              class={segment === undefined ? 'nav-link active' : 'nav-link '}
+              href="/dosen">
+              <i class="ni ni-tv-2 text-primary" />
+              <span class="nav-link-text">Dosen</span>
             </a>
           </li>
 

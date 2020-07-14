@@ -47,7 +47,7 @@
                 </a>
               </li>
               <li class="breadcrumb-item">
-                <a href=".">Dashboards</a>
+                <a href="\\" activlink>Dosen</a>
               </li>
             </ol>
           </nav>
